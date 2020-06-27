@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+   <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id = main>
+        <div><h1>Calculator</h1></div>
+        <div id="inputdiv">
+            <input id = inp type="text">
+        </div>
+        <div class="row">
+            <button style = "background-color: red" class = "row1" onclick="clearfield()" >C</button>
+            <button class = "row1" onclick="deletelast();">CE</button>
+            <button class = "row1" onclick="getsquare()">x<sup>2</sup></button>
+            <button class = "row1" onclick="getroot()">&radic;</button>
+        </div>
+        <div class="row">
+            <button onclick="getnumber('7')">7</button>
+            <button onclick="getnumber('8')">8</button>
+            <button onclick="getnumber('9')">9</button>
+            <button onclick="getnumber('*')">X</button>
+        </div>
+        <div class="row">
+            <button onclick="getnumber('4')">4</button>
+            <button onclick="getnumber('5')">5</button>
+            <button onclick="getnumber('6')">6</button>
+            <button onclick="getnumber('+')">+</button>
+        </div>
+        <div class="row">
+            <button onclick="getnumber('3')">3</button>
+            <button onclick="getnumber('2')">2</button>
+            <button onclick="getnumber('1')">1</button>
+            <button onclick="getnumber('-')">-</button>
+        </div>
+        <div class="row">
+            <button style = "width: 125px" onclick="getnumber('0')">0</button>
+            <button onclick="getnumber('.')">.</button>
+            <button onclick="getresult()">=</button>
+        </div>
+    </div>
+    <div class = "footer">
+        <p>Made by Mehwish</p>
+    </div>
+</body>
+</html>
